@@ -1,0 +1,36 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CA3046
+D CA3046
+K Multiple Transistors
+$ENDCMP
+#
+$CMP CA3047
+D CA3046
+K Multiple Transistors
+$ENDCMP
+#
+$CMP CA3048
+D CA3046
+K Multiple Transistors
+$ENDCMP
+#
+$CMP CD4066
+D Quad Analog Switch
+$ENDCMP
+#
+$CMP LM6132
+D LM6132 Dual Op Amp
+$ENDCMP
+#
+$CMP MPQ3904
+D MPQ3904
+K Multiple Transistors
+$ENDCMP
+#
+$CMP MPQ3906
+D Transistor PNP (general)
+K pnp transistor
+$ENDCMP
+#
+#End Doc Library

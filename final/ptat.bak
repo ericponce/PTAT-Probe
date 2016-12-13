@@ -1,0 +1,212 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:comps
+LIBS:w_connectors
+LIBS:final-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR01
+U 1 1 582D89C2
+P 3300 3450
+F 0 "#PWR01" H 3300 3200 50  0001 C CNN
+F 1 "GND" H 3300 3300 50  0000 C CNN
+F 2 "" H 3300 3450 50  0000 C CNN
+F 3 "" H 3300 3450 50  0000 C CNN
+	1    3300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 582D89E5
+P 2200 3000
+F 0 "R1" V 2280 3000 50  0000 C CNN
+F 1 "91" V 2200 3000 50  0000 C CNN
+F 2 "Resistors_ThroughHole:Resistor_Vertical_RM5mm" V 2130 3000 50  0001 C CNN
+F 3 "" H 2200 3000 50  0000 C CNN
+	1    2200 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3150 2200 3350
+Wire Wire Line
+	2200 3350 4500 3350
+Wire Wire Line
+	3300 2650 3300 3450
+Wire Wire Line
+	4500 3350 4500 2650
+Wire Wire Line
+	2200 2850 2200 2650
+Wire Wire Line
+	2200 2250 2200 1800
+Wire Wire Line
+	2200 1400 2200 1200
+Wire Wire Line
+	2200 1200 3300 1200
+Wire Wire Line
+	3300 1200 3300 1400
+Wire Wire Line
+	3000 1600 2500 1600
+Wire Wire Line
+	2750 1600 2750 1950
+Wire Wire Line
+	2750 1950 2200 1950
+Connection ~ 2200 1950
+Connection ~ 2750 1600
+Wire Wire Line
+	3300 1800 3300 2250
+Wire Wire Line
+	2500 2450 3000 2450
+Wire Wire Line
+	2900 2450 2900 2150
+Wire Wire Line
+	2900 2150 3950 2150
+Connection ~ 3300 2150
+Connection ~ 2900 2450
+Wire Wire Line
+	3950 2150 3950 2450
+Wire Wire Line
+	3950 2450 4200 2450
+Wire Wire Line
+	4500 2250 4500 1950
+Text HLabel 4500 1950 1    60   Input ~ 0
+I_OUT
+Connection ~ 3300 3350
+Wire Wire Line
+	2200 2100 1300 2100
+Wire Wire Line
+	1300 2100 1300 2250
+Connection ~ 2200 2100
+Wire Wire Line
+	1300 2650 1300 2750
+Wire Wire Line
+	1300 2750 2200 2750
+Connection ~ 2200 2750
+Wire Wire Line
+	2550 2450 2550 2250
+Wire Wire Line
+	2550 2250 1600 2250
+Wire Wire Line
+	1600 2250 1600 2450
+Connection ~ 2550 2450
+$Comp
+L MPQ3906 Q202
+U 2 1 5840CE00
+P 3200 1600
+F 0 "Q202" H 3500 1650 50  0000 R CNN
+F 1 "MPQ3906" H 3800 1550 50  0000 R CNN
+F 2 "w_pth_circuits:dil_14-300" H 3400 1700 50  0001 C CNN
+F 3 "" H 3200 1600 50  0000 C CNN
+	2    3200 1600
+	1    0    0    1   
+$EndComp
+$Comp
+L MPQ3906 Q202
+U 1 1 5840CEDA
+P 2300 1600
+F 0 "Q202" H 2600 1650 50  0000 R CNN
+F 1 "MPQ3906" H 2900 1550 50  0000 R CNN
+F 2 "w_pth_circuits:dil_14-300" H 2500 1700 50  0001 C CNN
+F 3 "" H 2300 1600 50  0000 C CNN
+	1    2300 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L MPQ3904 Q201
+U 1 1 5840CF32
+P 1400 2450
+F 0 "Q201" H 1700 2500 50  0000 R CNN
+F 1 "MPQ3904" H 1950 2400 50  0000 R CNN
+F 2 "w_pth_circuits:dil_14-300" H 1600 2550 50  0001 C CNN
+F 3 "" H 1400 2450 50  0000 C CNN
+	1    1400 2450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MPQ3904 Q201
+U 2 1 5840CF5E
+P 2300 2450
+F 0 "Q201" H 2600 2500 50  0000 R CNN
+F 1 "MPQ3904" H 2850 2400 50  0000 R CNN
+F 2 "w_pth_circuits:dil_14-300" H 2500 2550 50  0001 C CNN
+F 3 "" H 2300 2450 50  0000 C CNN
+	2    2300 2450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L MPQ3904 Q201
+U 3 1 5840CF8E
+P 3200 2450
+F 0 "Q201" H 3500 2500 50  0000 R CNN
+F 1 "MPQ3904" H 3750 2400 50  0000 R CNN
+F 2 "w_pth_circuits:dil_14-300" H 3400 2550 50  0001 C CNN
+F 3 "" H 3200 2450 50  0000 C CNN
+	3    3200 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MPQ3904 Q201
+U 4 1 5840CFB7
+P 4400 2450
+F 0 "Q201" H 4700 2500 50  0000 R CNN
+F 1 "MPQ3904" H 4950 2400 50  0000 R CNN
+F 2 "w_pth_circuits:dil_14-300" H 4600 2550 50  0001 C CNN
+F 3 "" H 4400 2450 50  0000 C CNN
+	4    4400 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR02
+U 1 1 5840D22A
+P 2750 1100
+F 0 "#PWR02" H 2750 950 50  0001 C CNN
+F 1 "+5V" H 2750 1240 50  0000 C CNN
+F 2 "" H 2750 1100 50  0000 C CNN
+F 3 "" H 2750 1100 50  0000 C CNN
+	1    2750 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 1100 2750 1200
+Connection ~ 2750 1200
+$EndSCHEMATC

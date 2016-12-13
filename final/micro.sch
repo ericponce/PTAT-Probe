@@ -1,0 +1,204 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:comps
+LIBS:w_connectors
+LIBS:final-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Arduino_Nano_Header J401
+U 1 1 5843A203
+P 5700 3550
+F 0 "J401" H 5700 4350 60  0000 C CNN
+F 1 "Arduino_Nano_Header" H 5700 2750 60  0000 C CNN
+F 2 "w_conn_misc:arduino_nano_header" H 5700 3550 60  0001 C CNN
+F 3 "" H 5700 3550 60  0000 C CNN
+	1    5700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR018
+U 1 1 5843A23C
+P 6350 3050
+F 0 "#PWR018" H 6350 2900 50  0001 C CNN
+F 1 "+5V" H 6350 3190 50  0000 C CNN
+F 2 "" H 6350 3050 50  0000 C CNN
+F 3 "" H 6350 3050 50  0000 C CNN
+	1    6350 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3050 6350 3150
+Wire Wire Line
+	6350 3150 6050 3150
+$Comp
+L +3V3 #PWR019
+U 1 1 5843A25C
+P 6350 4050
+F 0 "#PWR019" H 6350 3900 50  0001 C CNN
+F 1 "+3V3" H 6350 4190 50  0000 C CNN
+F 2 "" H 6350 4050 50  0000 C CNN
+F 3 "" H 6350 4050 50  0000 C CNN
+	1    6350 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4050 6350 4300
+Wire Wire Line
+	6350 4150 6050 4150
+Connection ~ 6350 4150
+$Comp
+L CP1 C401
+U 1 1 5843A2ED
+P 6350 3300
+F 0 "C401" H 6375 3400 50  0000 L CNN
+F 1 "2.2u" H 6375 3200 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2" H 6350 3300 50  0001 C CNN
+F 3 "" H 6350 3300 50  0000 C CNN
+	1    6350 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C402
+U 1 1 5843A30D
+P 6350 4450
+F 0 "C402" H 6375 4550 50  0000 L CNN
+F 1 "2.2u" H 6375 4350 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2" H 6350 4450 50  0001 C CNN
+F 3 "" H 6350 4450 50  0000 C CNN
+	1    6350 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 5843A36A
+P 6350 4700
+F 0 "#PWR020" H 6350 4450 50  0001 C CNN
+F 1 "GND" H 6350 4550 50  0000 C CNN
+F 2 "" H 6350 4700 50  0000 C CNN
+F 3 "" H 6350 4700 50  0000 C CNN
+	1    6350 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4700 6350 4600
+$Comp
+L GND #PWR021
+U 1 1 5843A39A
+P 6350 3600
+F 0 "#PWR021" H 6350 3350 50  0001 C CNN
+F 1 "GND" H 6350 3450 50  0000 C CNN
+F 2 "" H 6350 3600 50  0000 C CNN
+F 3 "" H 6350 3600 50  0000 C CNN
+	1    6350 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3600 6350 3450
+Wire Wire Line
+	5350 3250 5150 3250
+Wire Wire Line
+	5350 3550 5150 3550
+Wire Wire Line
+	5350 3650 5150 3650
+Wire Wire Line
+	5350 4250 5150 4250
+Text HLabel 5150 3250 0    60   Input ~ 0
+COMP_IN
+Text HLabel 5150 3550 0    60   Output ~ 0
+RAMP_UP
+Text HLabel 5150 3650 0    60   Output ~ 0
+CLEAR
+Text HLabel 5150 4250 0    60   Output ~ 0
+RAMP_DOWN
+Wire Wire Line
+	5350 3150 4450 3150
+Wire Wire Line
+	4450 3150 4450 3300
+$Comp
+L GND #PWR022
+U 1 1 5843AAEE
+P 4450 3300
+F 0 "#PWR022" H 4450 3050 50  0001 C CNN
+F 1 "GND" H 4450 3150 50  0000 C CNN
+F 2 "" H 4450 3300 50  0000 C CNN
+F 3 "" H 4450 3300 50  0000 C CNN
+	1    4450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR023
+U 1 1 5843AB59
+P 6200 2950
+F 0 "#PWR023" H 6200 2700 50  0001 C CNN
+F 1 "GND" H 6200 2800 50  0000 C CNN
+F 2 "" H 6200 2950 50  0000 C CNN
+F 3 "" H 6200 2950 50  0000 C CNN
+	1    6200 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2950 6050 2950
+NoConn ~ 6050 2850
+NoConn ~ 6050 3050
+NoConn ~ 6050 3250
+NoConn ~ 6050 3350
+NoConn ~ 6050 3450
+NoConn ~ 6050 3550
+NoConn ~ 6050 3650
+NoConn ~ 6050 3750
+NoConn ~ 6050 3850
+NoConn ~ 6050 3950
+NoConn ~ 6050 4050
+NoConn ~ 6050 4250
+NoConn ~ 5350 4150
+NoConn ~ 5350 4050
+NoConn ~ 5350 3950
+NoConn ~ 5350 3850
+NoConn ~ 5350 3750
+NoConn ~ 5350 3450
+NoConn ~ 5350 3350
+NoConn ~ 5350 3050
+NoConn ~ 5350 2950
+NoConn ~ 5350 2850
+$EndSCHEMATC
